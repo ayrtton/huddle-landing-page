@@ -1,0 +1,9 @@
+@import './config';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $violet;
+}
