@@ -6,4 +6,38 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $violet;
+    color: $white;
+    padding: 0 6vw;
+
+    header {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 45%;
+        }
+    }
+
+    main {
+        height: 70vh;
+        display: flex;
+
+        .image {
+            width: 55%;
+        }
+
+        .content {
+            width: 45%;
+        }
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    footer {
+        height: 15vh;
+    }
 }

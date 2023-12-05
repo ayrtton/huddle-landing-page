@@ -12,4 +12,31 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
+  color: hsl(0, 100%, 100%);
+  padding: 0 6vw;
+}
+body header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+body header img {
+  height: 45%;
+}
+body main {
+  height: 70vh;
+  display: flex;
+}
+body main .image {
+  width: 55%;
+}
+body main .content {
+  width: 45%;
+}
+body main img {
+  max-height: 100%;
+  max-width: 100%;
+}
+body footer {
+  height: 15vh;
 }/*# sourceMappingURL=main.css.map */
