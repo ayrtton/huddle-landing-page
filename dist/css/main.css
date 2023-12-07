@@ -6,6 +6,38 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 2500px) {
+  h1 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 2500px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 2000px) {
+  h1 {
+    font-size: 3.1rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1500px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   background: url("../images/bg-desktop.svg");
@@ -16,22 +48,40 @@ body {
   padding: 0 6vw;
 }
 body header {
-  height: 15vh;
   display: flex;
   align-items: center;
+  height: 15vh;
+  width: 100%;
 }
 body header img {
   height: 45%;
 }
 body main {
-  height: 70vh;
   display: flex;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
 }
 body main .image {
-  width: 55%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 57%;
+}
+body main .image img {
+  width: 100%;
 }
 body main .content {
-  width: 45%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 43%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2vw;
+}
+body main .content h1 {
+  width: 100%;
 }
 body main img {
   max-height: 100%;

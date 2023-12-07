@@ -1,4 +1,4 @@
-@import './config';
+@import './config', './mixins', './media-queries';
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -10,9 +10,7 @@ body {
     padding: 0 6vw;
 
     header {
-        height: 15vh;
-        display: flex;
-        align-items: center;
+        @include flexbox(15vh);
 
         img {
             height: 45%;
@@ -20,15 +18,25 @@ body {
     }
 
     main {
-        height: 70vh;
-        display: flex;
+        @include flexbox(70vh);
 
         .image {
-            width: 55%;
+            @include flexbox(100%, 57%);
+
+            img {
+                width: 100%;
+            }
         }
 
         .content {
-            width: 45%;
+            @include flexbox(100%, 43%);
+            flex-direction: column;
+            justify-content: center;
+            padding: 2vw;
+
+            h1 {
+                width: 100%;
+            }
         }
 
         img {
