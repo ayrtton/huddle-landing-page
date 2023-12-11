@@ -8,9 +8,11 @@
 @mixin font_sizes($size_01, $size_02) {
     h1 {
         font-size: $size_01;
+        line-height: $size_01 * 1.5;
     }
 
-    p, a {
+    p, a, footer {
         font-size: $size_02;
+        line-height: $size_02 * 1.5;
     }
 }

@@ -10,15 +10,15 @@ body {
     padding: 0 6vw;
 
     header {
-        @include flexbox(17vh);
+        @include flexbox(18vh);
 
         img {
-            height: 40%;
+            height: 38%;
         }
     }
 
     main {
-        @include flexbox(68vh);
+        @include flexbox(70vh);
 
         .image {
             @include flexbox(100%, 57%);
@@ -32,7 +32,7 @@ body {
             @include flexbox(100%, 43%);
             flex-direction: column;
             justify-content: center;
-            padding: 0 2vw 4vh 2vw;
+            padding: 0 2vw 10vh 2vw;
 
             h1 {
                 width: 100%;
@@ -54,15 +54,13 @@ body {
                 background-color: $white;
                 color: $violet;
                 font-family: 'Poppins';
-                text-decoration: none;
                 border-radius: 5vw;
                 box-shadow: 0.5vw 0.5vw 1vw rgba(0, 0, 0, 0.3);
-                transition: 0.7s;
-            }
 
-            a:hover {
-                background-color: $soft_magenta;
-                color: $white;
+                &:hover {
+                    background-color: $soft_magenta;
+                    color: $white;
+                }
             }
         }
 
@@ -73,6 +71,46 @@ body {
     }
 
     footer {
-        height: 15vh;
+        height: 12vh;
+
+        .social-icons {
+            @include flexbox(45%, 20%);
+            justify-content: center;
+            gap: 1.5vw;
+            float: right;
+
+            .icon {
+                @include flexbox(100%, auto);
+                justify-content: center;
+                border: 0.12vw solid white;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+    
+                img {
+                    height: 55%;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    border: 0.12vw solid $soft_magenta;
+                }
+            }
+        } 
+
+        .attribution {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            a {
+                color: $soft-white;
+
+                &:hover {
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
