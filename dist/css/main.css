@@ -43,12 +43,63 @@
 }
 @media (max-width: 1500px) {
   h1 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.1rem;
+    line-height: 3.15rem;
   }
   p, a, footer {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 1.7rem;
+    line-height: 2.55rem;
+  }
+  p, a, footer {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+@media (max-width: 850px) {
+  h1 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  p, a, footer {
+    font-size: 0.9rem;
+    line-height: 1.35rem;
+  }
+  header img {
+    height: 32% !important;
+  }
+  main {
+    height: auto !important;
+    flex-direction: column;
+    gap: 8vh;
+    text-align: center;
+  }
+  main .image, main .content {
+    width: 100% !important;
+  }
+  main .content p {
+    width: 94%;
+  }
+  main .content .button {
+    height: 7vh !important;
+  }
+  main .content a {
+    margin: auto;
+    width: 65% !important;
+    border-radius: 5vh !important;
+  }
+  footer .social-icons {
+    float: initial !important;
+    margin: auto auto 2vh;
+  }
+  footer .attribution {
+    flex-direction: column;
+    align-items: center;
   }
 }
 body {

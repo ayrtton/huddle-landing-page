@@ -13,5 +13,56 @@
 }
 
 @media (max-width: 1500px) {
-    @include font_sizes(2rem, 1rem);
+    @include font_sizes(2.1rem, 1rem);
+}
+
+@media (max-width: 1000px) {
+    @include font_sizes(1.7rem, .8rem);
+}
+
+@media (max-width: 850px) {
+    @include font_sizes(1.6rem, .9rem);
+
+    header img {
+        height: 32% !important;
+    }
+
+    main {
+        height: auto !important;
+        flex-direction: column;
+        gap: 8vh;
+        text-align: center;
+
+        .image, .content {
+            width: 100% !important;
+        }
+
+        .content {
+            p {
+                width: 94%;
+            }
+
+            .button {
+                height: 7vh !important;
+            }
+
+            a {
+                margin: auto;
+                width: 65% !important;
+                border-radius: 5vh !important;
+            }
+        }
+    }
+
+    footer {
+        .social-icons {
+            float: initial !important;
+            margin: auto auto 2vh;
+        }
+
+        .attribution {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
