@@ -93,6 +93,9 @@
     width: 65% !important;
     border-radius: 5vh !important;
   }
+  footer {
+    padding-bottom: 2vh;
+  }
   footer .social-icons {
     float: initial !important;
     margin: auto auto 2vh;
@@ -123,7 +126,7 @@ body header img {
 body main {
   display: flex;
   align-items: center;
-  height: 70vh;
+  height: 68vh;
   width: 100%;
 }
 body main .image {
@@ -176,7 +179,7 @@ body main img {
   max-width: 100%;
 }
 body footer {
-  height: 12vh;
+  height: 14vh;
 }
 body footer .social-icons {
   display: flex;

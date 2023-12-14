@@ -18,7 +18,7 @@ body {
     }
 
     main {
-        @include flexbox(70vh);
+        @include flexbox(68vh);
 
         .image {
             @include flexbox(100%, 57%);
@@ -71,9 +71,10 @@ body {
     }
 
     footer {
-        height: 12vh;
+        height: 14vh;
 
         .social-icons {
+
             @include flexbox(45%, 20%);
             justify-content: center;
             gap: 1.5vw;
@@ -98,6 +99,7 @@ body {
         } 
 
         .attribution {
+
             position: relative;
             display: flex;
             justify-content: center;
